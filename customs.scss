@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$primary: rgb(169, 6, 131);
+$font-family-base: "roboto";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    .card-title {
+        color: $primary;
+    }
+}
+h1 {
+@extend .card;
+color: $primary;
+}
